@@ -1,0 +1,4 @@
+base=PATH_TO_DARTMOUTH_ATLAS_DATA
+
+dap=DAP_Hosp_HRR_ST_01_05.xls
+hrr_reimbursements=^(.*)_reimb_table_hrr.xls$
