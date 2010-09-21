@@ -1,4 +1,4 @@
-<project name="dartmouth-atlas" default="dist" basedir=".">
+<project xmlns:ivy="antlib:org.apache.ivy.ant" name="dartmouth-atlas" default="dist" basedir=".">
     <description>
 		Example build file.
     </description>
@@ -12,6 +12,13 @@
 	<target name="init">
 		<tstamp/>
 		<mkdir dir="${build}"/>
+	</target>
+
+	<!-- ================================= 
+		  target: resolve              
+	     ================================= -->
+	<target name="resolve" description="retrieve dependencies with ivy">
+		<ivy:retrieve />
 	</target>
   
 	<target name="build" depends="init" description="compile the source " >
