@@ -28,7 +28,7 @@
 				<!-- <pathelement path="${classpath}"/> -->
 				<!-- <pathelement location="classes"/> -->
 				<!-- <filelist refid="third-party_jars"/> -->
-				<fileset dir="lib">
+				<fileset dir="${lib}">
 					<include name="**/*.jar"/>
 				</fileset>
 			</classpath>
@@ -45,7 +45,7 @@
 				<name name="**/*.class"/>
 				<archives>
 					<zips>
-						<fileset dir="lib/" includes="**/*.jar"/>
+						<fileset dir="${lib}" includes="**/*.jar"/>
 					</zips>
 				</archives>
 			</restrict>
